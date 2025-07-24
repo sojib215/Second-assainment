@@ -80,6 +80,7 @@ nav {
   padding: 40px 100px;
   gap: 40px;
   flex-wrap: wrap;
+  margin: 115px 150px;
 }
 .banner-text{
     max-width: 570px;
@@ -176,6 +177,121 @@ nav {
   background-color: rgba(200, 70, 5, 1);
 }
 
+/* Badgh  */
+.badge img {
+    width: 300px;
+    position: absolute;
+    top: 2130px;
+    right: 880px;
+    box-shadow: rgba(0, 0, 0, 0.443);
+    /* display: none; */
+}
+
+/* plant-lover */
+.plant-lover{
+    display: flex;
+    gap: 60px;
+    margin-top: 210px;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+.plant-lover img{
+    width: 540px;
+}
+.lover-text{
+    width: 540px;
+}
+.lover-title{
+    font-size: 4rem;
+    font-weight: bold;
+}
+.lover-description li {
+    font-size: 1.4rem;
+    color: rgba(0, 0, 0, 0.5);
+}
+/* latest */
+
+.latest{
+  margin-top: 130px;
+}
+.latest-title{
+  font-size: 3.5rem;
+  font-weight: bold;
+  justify-self: center;
+}
+.latest-description{
+  width:100%;
+  max-width: 888px;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 16px auto;
+  padding: 0 15px;
+}
+
+/* images */
+.latest-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px; /* Zabo আর বাকি ছবির মধ্যে gap */
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.small-image {
+  display: flex;
+  flex-direction: column;
+  gap: 16px; /* ছোট ২ ছবির মধ্যে gap */
+}
+
+.f-image {
+  border-radius: 14px;
+  width: 100%;
+  max-width: 370px;
+  height: 240px; /* height বাড়ানো হয়েছে */
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.big-image {
+  border-radius: 20px;
+  width: 100%;
+  max-width: 760px;
+  height: 496px; /* দুইটা ছোট ছবির মোট height */
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.img-title {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.8);
+}
+
+.shop {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: 10px;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+}
+
+
+
 
 
 
@@ -256,6 +372,45 @@ nav {
  .card{
     padding: 10px;
  }
+ .badge img{
+    display: none;
+ }
+ /* .plant-lover */
+  .plant-lover {
+    flex-direction: column;
+    margin: 40px 20px;
+    gap: 30px;
+  }
+
+  .plant-lover img {
+    width: 100%;
+    height: auto;
+  }
+
+  .lover-text {
+    width: 100%;
+  }
+
+  .lover-title {
+    font-size: 2.2rem;
+    text-align: center;
+  }
+
+  .lover-description li {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    text-align: justify;
+  }
+/* lover image  */
+.latest-images {
+    flex-direction: column;
+  }
+
+  .f-image, .big-image {
+    width: 100%;
+    max-width: 100%;
+  } 
+
 
 
 
