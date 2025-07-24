@@ -234,7 +234,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 16px; /* Zabo আর বাকি ছবির মধ্যে gap */
+  gap: 16px; 
   flex-wrap: wrap;
   padding: 20px;
 }
@@ -242,14 +242,14 @@ nav {
 .small-image {
   display: flex;
   flex-direction: column;
-  gap: 16px; /* ছোট ২ ছবির মধ্যে gap */
+  gap: 16px; 
 }
 
 .f-image {
   border-radius: 14px;
   width: 100%;
   max-width: 370px;
-  height: 240px; /* height বাড়ানো হয়েছে */
+  height: 240px; 
   background-position: center;
   background-size: cover;
   display: flex;
@@ -264,7 +264,7 @@ nav {
   border-radius: 20px;
   width: 100%;
   max-width: 760px;
-  height: 496px; /* দুইটা ছোট ছবির মোট height */
+  height: 496px;
   background-position: center;
   background-size: cover;
   display: flex;
@@ -290,12 +290,74 @@ nav {
   text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
 }
 
+/* News latter  */
+
+.newsletter-section {
+  background-image: url('assets/news-letter-bg.png'); 
+  background-size: cover;
+  background-position: center;
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 14px;
+  margin: 40px auto;
+  max-width: 1200px;
+}
+
+.overlay {
+  padding: 40px 30px;
+  border-radius: 14px;
+  text-align: center;
+  width: 100%;
+  max-width: 700px;
+}
+
+.newsletter-title {
+  color: white;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.newsletter-form {
+  display: flex;
+  gap: 0;
+  background: white;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.email-input {
+  flex: 1;
+  padding: 14px 16px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+}
+
+.subscribe-btn {
+  background-color: #f15a23;
+  color: white;
+  border: none;
+  padding: 14px 22px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.subscribe-btn:hover {
+  background-color: #d84e1f;
+}
 
 
 
 
 
 /* Mobile view  */
+
+
 @media screen and (max-width: 768px) {
     /* nav  */
   nav {
@@ -404,12 +466,19 @@ nav {
 /* lover image  */
 .latest-images {
     flex-direction: column;
+    align-items: center;
+    gap: 16px;
   }
-
   .f-image, .big-image {
     width: 100%;
-    max-width: 100%;
+    max-width: 90vw;
+    height: 250px;
   } 
+  .small-image{
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
 
 
 
